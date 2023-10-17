@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///Users/jpmora/Downloads/Laboratorio.2.html -->
+<html lang="es" data-redeviation-bs-uid="5fwpnl7otut" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./Laboratorio_Bash_files/gtm.js"></script><script type="text/javascript" async="" src="./Laboratorio_Bash_files/analytics.js"></script><script async="" src="./Laboratorio_Bash_files/gtm(1).js"></script><script type="text/javascript" async="" src="./Laboratorio_Bash_files/analytics(1).js"></script><script async="" src="./Laboratorio_Bash_files/gtm(2).js"></script><script type="text/javascript" async="" src="./Laboratorio_Bash_files/analytics(2).js"></script><script async="" src="./Laboratorio_Bash_files/gtm(3).js"></script><script type="text/javascript" async="" src="./Laboratorio_Bash_files/analytics(3).js"></script><script type="text/javascript" async="" src="./Laboratorio_Bash_files/js"></script><script type="text/javascript" async="" src="./Laboratorio_Bash_files/js(1)"></script><script type="text/javascript" async="" src="./Laboratorio_Bash_files/analytics(4).js"></script><script async="" src="./Laboratorio_Bash_files/gtm(4).js"></script><script type="text/javascript" src="chrome-extension://mdnleldcmiljblolnjhpnblkcekpdkpa/libs/customElements.js" class="__REQUESTLY__SCRIPT"></script>
+  <!--<base href=".">--><!--<base href=".">--><!--<base href=".">--><!--<base href=".">--><base href="."> 
+   
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <title>Laboratorio 2</title> 
+  <meta name="HandheldFriendly" content="True"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com/"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""> 
+  <link rel="stylesheet" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" href="./Laboratorio_Bash_files/css2"> 
+  <link rel="stylesheet" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" href="./Laboratorio_Bash_files/prism.min.css"> 
+  <noscript> 
+   <link rel="stylesheet" href="https://cdn.freecodecamp.org/news-assets/prism/1.29.0/themes/prism.min.css"> 
+  </noscript> 
+  <link rel="stylesheet" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" href="./Laboratorio_Bash_files/prism-unescaped-markup.min.css"> 
+  <noscript> 
+   <link rel="stylesheet" href="https://cdn.freecodecamp.org/news-assets/prism/1.29.0/plugins/unescaped-markup/prism-unescaped-markup.min.css"> 
+  </noscript> 
+  <script defer="" src="./Laboratorio_Bash_files/prism-core.min.js"></script> 
+  <script defer="" src="./Laboratorio_Bash_files/prism-autoloader.min.js"></script> 
+  <link rel="stylesheet" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" href="./Laboratorio_Bash_files/global-26e2f3cde9.css"> 
+  <link rel="stylesheet" type="text/css" href="./Laboratorio_Bash_files/screen-561dcb294a.css"> 
+  <link rel="stylesheet" type="text/css" href="./Laboratorio_Bash_files/search-bar-124f5f949c.css"> 
+  <script defer="" src="./Laboratorio_Bash_files/algoliasearch.min.js"></script> 
+  <script defer="" src="./Laboratorio_Bash_files/autocomplete.min.js"></script> 
+  <script defer="" src="./Laboratorio_Bash_files/dayjs.min.js"></script> 
+  <script defer="" src="./Laboratorio_Bash_files/localizedFormat.min.js"></script> 
+  <script defer="" src="./Laboratorio_Bash_files/relativeTime.min.js"></script> 
+  <script defer="" src="./Laboratorio_Bash_files/en.min.js"></script> 
+  <script>let client,index;document.addEventListener("DOMContentLoaded",(()=>{client=algoliasearch("QMJYL5WYTI","89770b24481654192d7a5c402c6ad9a0"),index=client.initIndex("news")})),document.addEventListener("DOMContentLoaded",(()=>{const e=window.screen.width,t=window.screen.height,n=e>=767&&t>=768?8:5,o=document.getElementById("search-form"),s=document.getElementById("search-input"),a=document.getElementById("dropdown-container");let i,d,c;s.addEventListener("input",(e=>{i=e.target.value})),o.addEventListener("submit",(e=>{e.preventDefault(),function(){if(d=document.getElementsByClassName("aa-cursor")[0],d&&i){const e=d.querySelector("a").href;window.location.assign(e)}else!d&&i&&c&&window.location.assign(`https://www.freecodecamp.org/news/search?query=${i}`)}()}));const l=autocomplete("#search-input",{hint:!1,keyboardShortcuts:["s",191],openOnFocus:!0,appendTo:a,debug:!0},[{source:autocomplete.sources.hits(index,{hitsPerPage:n}),debounce:250,templates:{suggestion:e=>(c=!0,`\n            <a href="${e.url}">\n              <div class="algolia-result">\n                <span>${e._highlightResult.title.value}</span>\n              </div>\n            </a>\n          `),empty:()=>(c=!1,'\n            <div class="aa-suggestion footer-suggestion no-hits-footer">\n              <div class="algolia-result">\n                <span>\n                  No tutorials found\n                </span>\n              </div>\n            </div>\n          '),footer:e=>{if(!e.isEmpty)return`\n              <div class="aa-suggestion footer-suggestion">\n                <a id="algolia-footer-selector" href="https://www.freecodecamp.org/news/search?query=${i}">\n                  <div class="algolia-result algolia-footer">\n                    See all results for ${i}\n                  </div>\n                </a>\n              </div>\n            `}}}]).on("autocomplete:selected",((e,t,n,o)=>{d=t?t.url:`https://www.freecodecamp.org/news/search?query=${i}`,"click"!==o.selectionMethod&&"tabKey"!==o.selectionMethod&&c&&window.location.assign(d)}));document.addEventListener("click",(e=>{e.target!==s&&l.autocomplete.close()}))})),document.addEventListener("DOMContentLoaded",(()=>{dayjs.extend(dayjs_plugin_localizedFormat),dayjs.extend(dayjs_plugin_relativeTime),dayjs.locale("en")}));const isAuthenticated=document.cookie.split(";").some((e=>e.trim().startsWith("jwt_access_token="))),isDonor=document.cookie.split(";").some((e=>e.trim().startsWith("isDonor=true")));</script> 
+  <script data-ad-client="ca-pub-9482786369113753" src="./Laboratorio_Bash_files/f.txt" crossorigin="anonymous" async=""></script> 
+  <link rel="icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico" type="image/png"> 
+   
+  <meta name="referrer" content="no-referrer-when-downgrade"> 
+  <meta name="description" content="In Linux, process automation relies heavily on shell scripting. This involves creating a file containing a series of commands that can be executed together. In this article, we&#39;ll start with the basics of bash scripting which includes variables, commands, inputs/ outputs, and debugging. We&#39;ll also see examples of each along"> 
+  <meta property="og:site_name" content="freeCodeCamp.org"> 
+  <meta property="og:type" content="article"> 
+  <meta property="og:title" content="Bash Scripting Tutorial – Linux Shell Script and Command Line for Beginners"> 
+  <meta property="og:description" content="In Linux, process automation relies heavily on shell scripting. This involves creating a file containing a series of commands that can be executed together. In this article, we&#39;ll start with the basics of bash scripting which includes variables, commands, inputs/ outputs, and debugging. We&#39;ll also see examples of each along"> 
+   
+  <meta property="og:image" content="https://www.freecodecamp.org/news/content/images/2023/03/Copy-of-Cast-a-Function-in-SQL---Convert-Char-to-Int-SQL-Server-Example.png"> 
+  <meta property="article:published_time" content="2023-03-20T17:35:58.000Z"> 
+  <meta property="article:modified_time" content="2023-03-23T16:40:37.000Z"> 
+  <meta property="article:tag" content="Linux"> 
+  <meta property="article:tag" content="Bash"> 
+  <meta property="article:tag" content="Shell Script"> 
+  <meta property="article:publisher" content="https://www.facebook.com/freecodecamp"> 
+  <meta name="twitter:card" content="summary_large_image"> 
+  <meta name="twitter:title" content="Bash Scripting Tutorial – Linux Shell Script and Command Line for Beginners"> 
+  <meta name="twitter:description" content="In Linux, process automation relies heavily on shell scripting. This involves creating a file containing a series of commands that can be executed together. In this article, we&#39;ll start with the basics of bash scripting which includes variables, commands, inputs/ outputs, and debugging. We&#39;ll also see examples of each along"> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  <script type="application/ld+json">{
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"publisher": {
+		"@type": "Organization",
+		"name": "freeCodeCamp.org",
+		"url": "https://www.freecodecamp.org/news/",
+		"logo": {
+			"@type": "ImageObject",
+			"url": "https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg",
+			"width": 2100,
+			"height": 240
+		}
+	},
+	"image": {
+		"@type": "ImageObject",
+		"url": "https://www.freecodecamp.org/news/content/images/2023/03/Copy-of-Cast-a-Function-in-SQL---Convert-Char-to-Int-SQL-Server-Example.png",
+		"width": 1200,
+		"height": 670
+	},
+	"url": "https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.freecodecamp.org/news/"
+	},
+	"datePublished": "2023-03-20T17:35:58.000Z",
+	"dateModified": "2023-03-23T16:40:37.000Z",
+	"keywords": "Linux, Bash, Shell Script",
+	"description": "In Linux, process automation relies heavily on shell scripting. This involves\ncreating a file containing a series of commands that can be executed together.\n\nIn this article, we&#x27;ll start with the basics of bash scripting which includes\nvariables, commands, inputs/ outputs, and debugging. We&#x27;ll also see examples of\neach along the way.\n\nLet&#x27;s get started. 🚀\n\nTable of Contents\n 1. Pre-requisites\n 2. Introduction\n\n * Definition of Bash scripting\n * Advantages of Bash scripting\n * Overview of Bash s",
+	"headline": "Bash Scripting Tutorial – Linux Shell Script and Command Line for Beginners",
+	"author": {
+		"@type": "Person",
+		"name": "Zaira Hira",
+		"url": "https://www.freecodecamp.org/news/author/zaira/",
+		"sameAs": [
+			"https://twitter.com/hira_zaira"
+		],
+		"image": {
+			"@type": "ImageObject",
+			"url": "https://www.freecodecamp.org/news/content/images/2022/04/DSC_0649.jpg",
+			"width": 1925,
+			"height": 2895
+		}
+	}
+}</script> 
+  <meta name="generator" content="Eleventy"> 
+  <link rel="alternate" type="application/rss+xml" title="freeCodeCamp.org" href="https://www.freecodecamp.org/news/rss/"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com/"> <!-- Web Monetization (https://webmonetization.org/) --> 
+  <meta name="monetization" content="$ilp.uphold.com/LJmbPn7WD4JB"> <!-- end Web Monetization --> <!-- dataLayer setup --> 
+  <script>
+window.dataLayer = window.dataLayer || [];
+</script> <!-- End dataLayer setup --> <!-- Google Tag Manager --> 
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5D6RKKP');</script> <!-- End Google Tag Manager --> 
+  <meta name="google-site-verification" content="b4tITLzEeeZGEpvD4mGNf3khKM4fvqejQaz9SYBQP8E"> 
+  <meta http-equiv="X-Translated-By" content="Google">
+  <meta http-equiv="X-Translated-To" content="es">
+  <script type="text/javascript" src="./Laboratorio_Bash_files/m=corsproxy" data-sourceurl="https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/"></script>
+  <script type="text/javascript" src="./Laboratorio_Bash_files/m=phishing_protection" data-phishing-protection-enabled="false"></script>
+  <meta name="robots" content="none">
+ <script async="" src="./Laboratorio_Bash_files/lazy.min.js"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./Laboratorio_Bash_files/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="./Laboratorio_Bash_files/m=el_main"></script><style class="redeviation-bs-style" data-name="content">/*! (c) Philipp Koenig under MS-RSL */
+body>div#redeviation-bs-indicator>div{opacity:0;pointer-events:none}body>#redeviation-bs-overlay.redeviation-bs-visible,body>#redeviation-bs-sidebar.redeviation-bs-visible{opacity:1;pointer-events:auto}body.redeviation-bs-noscroll{overflow:hidden !important}body>div#redeviation-bs-indicator>div{position:absolute;transform:translate3d(-24px, 0, 0);top:0;left:0;width:24px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity .3s,transform .3s;z-index:2}body>div#redeviation-bs-indicator>div>span{-webkit-mask:no-repeat center/24px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#redeviation-bs-indicator[data-pos=right]{left:auto;right:0}body>div#redeviation-bs-indicator[data-pos=right]>div{transform:translate3d(24px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{border-radius:0}body>div#redeviation-bs-indicator.redeviation-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#redeviation-bs-indicator[data-pos=left].redeviation-bs-has-lsb{height:100% !important;top:0 !important}body>div#redeviation-bs-indicator[data-pos=left].redeviation-bs-has-lsb>div{background:rgba(0,0,0,0)}body>div#redeviation-bs-indicator[data-pos=left].redeviation-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>#redeviation-bs-sidebar{width:350px;max-width:none;height:0;z-index:2147483646;background-color:rgba(0,0,0,0.6) !important;color-scheme:auto !important;speak:none;border:none;display:block !important;transform:translate3d(-350px, 0, 0);transition:width 0s .3s,height 0s .3s,opacity .3s,transform .3s}body>#redeviation-bs-sidebar[data-pos=right]{left:auto;right:0;transform:translate3d(350px, 0, 0)}body>#redeviation-bs-sidebar.redeviation-bs-visible{width:calc(100% + 350px);height:100%;transform:translate3d(0, 0, 0);transition:opacity .3s,transform .3s}body>#redeviation-bs-sidebar.sidepanel{width:100% !important}body>#redeviation-bs-sidebar.redeviation-bs-hideMask{background:none !important}body>#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){width:calc(350px + 50px)}body>#redeviation-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;speak:none;background:rgba(0,0,0,0.5) !important;color-scheme:auto !important;transition:opacity .3s}</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="./Laboratorio_Bash_files/m=el_main_css(1)"><script type="text/javascript" charset="UTF-8" src="./Laboratorio_Bash_files/m=el_main(1)"></script></head> 
+ <body class="home-template" style="margin-top: 56px;">
+   
+  <div class="site-wrapper"> 
+     
+   <script>document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("banner"),t=document.getElementById("banner-text");isAuthenticated?(t.innerHTML="Support our charity and our mission. <span>Donate to freeCodeCamp.org</span>.",e.href="https://www.freecodecamp.org/donate",e.setAttribute("text-variation","authenticated")):isDonor?(t.innerHTML="Thank you for supporting freeCodeCamp through <span>your donations</span>.",e.href="https://www.freecodecamp.org/news/how-to-donate-to-free-code-camp/",e.setAttribute("text-variation","donor")):(t.innerHTML="Learn to code — <span>free 3,000-hour curriculum</span>",e.href="https://www.freecodecamp.org/",e.setAttribute("text-variation","default"))}));</script> 
+   <div id="error-message"></div> 
+   <main id="site-main" class="post-template site-main outer"> 
+    <div class="inner ad-layout"> 
+     <article class="post-full post "> 
+      <header class="post-full-header"> 
+        
+       <h1 class="post-full-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Laboratorio de scripting de Bash</font></font></font></font></h1> 
+      </header> 
+      <div class="post-full-author-header" data-test-label="author-header-no-bio"> 
+       <section class="author-card" data-test-label="author-card"> 
+         
+         
+       </section> 
+      </div> 
+      <figure class="post-full-image"> <picture> 
+        <source media="(max-width: 700px)" sizes="1px" srcset="data:image/gif;base64?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp,https://www-freecodecamp-org.translate.goog/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 1w"> 
+        <source media="(min-width: 701px)" sizes="(max-width: 800px) 400px, (max-width: 1170px) 700px, 1400px" srcset="https://www-freecodecamp-org.translate.goog/news/content/images/size/w300/2023/03/Copy-of-Cast-a-Function-in-SQL---Convert-Char-to-Int-SQL-Server-Example.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 300w,https://www-freecodecamp-org.translate.goog/news/content/images/size/w600/2023/03/Copy-of-Cast-a-Function-in-SQL---Convert-Char-to-Int-SQL-Server-Example.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 600w,https://www-freecodecamp-org.translate.goog/news/content/images/size/w1000/2023/03/Copy-of-Cast-a-Function-in-SQL---Convert-Char-to-Int-SQL-Server-Example.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 1000w,https://www-freecodecamp-org.translate.goog/news/content/images/size/w2000/2023/03/Copy-of-Cast-a-Function-in-SQL---Convert-Char-to-Int-SQL-Server-Example.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 2000w"> 
+         
+       </picture> 
+      </figure> 
+      <section class="post-full-content"> 
+       <div class="post-and-sidebar"> 
+        <section class="post-content " data-test-label="post-content"> 
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En Linux, la automatización de procesos depende en gran medida de los scripts de shell. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esto implica crear un archivo que contenga una serie de comandos que se pueden ejecutar juntos.</font></font></font></font></p>
+         
+         
+         <!--kg-card-begin: markdown-->
+          
+          
+          
+          
+          
+         
+          
+          
+          
+          <!--kg-card-end: markdown-->
+         <h2 id="pre-requisites"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Requisitos previos</font></font></font></font></h2>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font class="" style="vertical-align: inherit;">Para seguir este laboratorio, debes tener los siguientes accesorios:</font></font></font></font></p>
+         <ul>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Una versión en ejecución de Linux con acceso a la línea de comando.</font></font></font></font></li>
+         </ul>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <h2 id="how-to-get-started-with-bash-scripting"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cómo empezar con las secuencias de comandos Bash</font></font></font></font></h2>
+         <h3 id="running-bash-commands-from-the-command-line"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ejecutar comandos Bash desde la línea de comandos</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Como se mencionó anteriormente, el indicador de concha se parece a esto:</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">[username@host ~]$</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Puede ingresar cualquier comando después del </font></font></font></font><code>$</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">signo y ver el resultado en la terminal.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Generalmente, los comandos siguen esta sintaxis:</font></font></font></font></p>
+         <pre><code>command [OPTIONS] arguments</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Analizamos algunos comandos básicos de bash y vemos sus resultados. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asegúrate de seguirnos :)</font></font></font></font></p>
+         <ul>
+          <li><code>date</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Muestra la fecha actual</font></font></font></font></li>
+         </ul>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">zaira@Zaira:~/shell-tutorial$ date
+Tue Mar 14 13:08:57 PKT 2023</code></pre>
+         <ul>
+          <li><code>pwd</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Muestra el directorio de trabajo actual.</font></font></font></font></li>
+         </ul>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">zaira@Zaira:~/shell-tutorial$ pwd
+/home/zaira/shell-tutorial</code></pre>
+         <ul>
+          <li><code>ls</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Muestra el contenido del directorio actual.</font></font></font></font></li>
+         </ul>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">zaira@Zaira:~/shell-tutorial$ ls
+check_plaindrome.sh  count_odd.sh  env  log  temp</code></pre>
+         <ul>
+          <li><code>echo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Imprima una cadena de texto o el valor de una variable en la terminal.</font></font></font></font></li>
+         </ul>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">zaira@Zaira:~/shell-tutorial$ echo "Hello bash"
+Hello bash</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Siempre puedes consultar un manual de comandos con el </font></font></font></font><code>man</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">comando.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Por ejemplo, el manual de </font></font></font></font><code>ls</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">se parece a esto:</font></font></font></font></p>
+         <figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption">
+          <img src="./Laboratorio_Bash_files/image-138.png" class="kg-image" alt="imagen-138" srcset="https://www-freecodecamp-org.translate.goog/news/content/images/size/w600/2023/03/image-138.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 600w,https://www-freecodecamp-org.translate.goog/news/content/images/size/w1000/2023/03/image-138.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 1000w,https://www-freecodecamp-org.translate.goog/news/content/images/size/w1600/2023/03/image-138.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 1600w,https://www-freecodecamp-org.translate.goog/news/content/images/2023/03/image-138.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 1890w" sizes="(min-width: 1200px) 1200px" width="1890" height="969" loading="lazy">
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Puede ver las opciones de un comando en detalle usando</font></font></font></font><code>man</code>
+          </figcaption>
+         </figure>
+         <h3 id="how-to-create-and-execute-bash-scripts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cómo crear y ejecutar scripts Bash</font></font></font></font></h3>
+         <h4 id="script-naming-conventions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Convenciones de nomenclatura de guiones</font></font></font></font></h4>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Por convención de nomenclatura, los scripts bash terminan en </font></font></font></font><code>.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sin embargo, los scripts bash pueden ejecutarse perfectamente sin la </font></font></font></font><code>sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">extensión.</font></font></font></font></p>
+         <h4 id="adding-the-shebang"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agregando el Shebang</font></font></font></font></h4>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los scripts Bash comienzan con </font></font></font></font><code>shebang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shebang es una combinación de la ruta del shell bash </font></font></font></font><code>bash #</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">y </font></font></font></font><code>bang !</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">seguida de ella. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es la primera línea del guión. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shebang le dice al shell que lo ejecuta a través de bash shell. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shebang es simplemente un camino absoluto hacia el intérprete de bash.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A continuación se muestra un ejemplo de la declaración shebang.</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Puede encontrar la ruta de su shell bash (que puede variar de la anterior) usando el comando:</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">which bash</code></pre>
+         <h4 id="creating-our-first-bash-script"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Creando nuestro primer script bash</font></font></font></font></h4>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nuestro primer script solicita al usuario que ingrese una ruta. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A cambio, se enumerará su contenido.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cree un archivo nombrado </font></font></font></font><code>run_all.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">usando el </font></font></font></font><code>vi</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">comando. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Puede utilizar cualquier editor de su elección.</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">vi run_all.sh</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agregue los siguientes comandos en su archivo y guárdelo:</font></font></font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+echo "Today is " `date`
+
+echo -e "\nenter the path to directory"
+read the_path
+
+echo -e "\n you path has the following files and folders: "
+ls $the_path</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Script para imprimir el contenido de un directorio proporcionado por el usuario
+          </font></font></font></font></figcaption>
+         </figure>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Echemos un vistazo más profundo al guión línea por línea. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estoy mostrando el mismo guión nuevamente, pero esta vez con números de línea. &nbsp;</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">  1 #!/bin/bash
+  2 echo "Today is " `date`
+  3
+  4 echo -e "\nenter the path to directory"
+  5 read the_path
+  6
+  7 echo -e "\n you path has the following files and folders: "
+  8 ls $the_path</code></pre>
+         <ul>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea #1: Shebang ( </font></font></font></font><code>#!/bin/bash</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) apunta hacia la ruta del shell bash.</font></font></font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea #2: El </font></font></font></font><code>echo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">comando muestra la fecha y hora actuales en el terminal. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tenga en cuenta que </font></font></font></font><code>date</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">está entre comillas invertidas.</font></font></font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea #4: Queremos que el usuario ingrese una ruta válida.</font></font></font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea #5: El </font></font></font></font><code>read</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">comando lee la entrada y la almacena en la variable </font></font></font></font><code>the_path</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea #8: El </font></font></font></font><code>ls</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">comando toma la variable con la ruta almacenada y muestra los archivos y carpetas actuales.</font></font></font></font></li>
+         </ul>
+         <h4 id="executing-the-bash-script"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ejecutando el script bash</font></font></font></font></h4>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para que el script sea ejecutable, asigne derechos de ejecución a su usuario usando este comando:</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">chmod u+x run_all.sh</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aquí,</font></font></font></font></p>
+         <ul>
+          <li><code>chmod</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">modifica la propiedad de un archivo para el usuario actual: </font></font></font></font><code>u</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></font></font></li>
+          <li><code>+x</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">agrega los derechos de ejecución al usuario actual. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esto significa que el usuario propietario ahora puede ejecutar el script.</font></font></font></font></li>
+          <li><code>run_all.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">es el archivo que deseamos ejecutar.</font></font></font></font></li>
+         </ul>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Puede ejecutar el script utilizando cualquiera de los métodos mencionados:</font></font></font></font></p>
+         <ul>
+          <li><code>sh run_all.sh</code></li>
+          <li><code>bash run_all.sh</code></li>
+          <li><code>./run_all.sh</code></li>
+         </ul>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Veámoslo funcionando en acción 🚀</font></font></font></font></p>
+         <figure class="kg-card kg-image-card kg-width-wide">
+          <img src="./Laboratorio_Bash_files/run-script-bash-2.gif" class="kg-image" alt="ejecutar-script-bash-2" width="927" height="411" loading="lazy">
+         </figure>
+         <p></p>
+         <h2 id="bash-scripting-basics"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conceptos básicos de secuencias de comandos Bash</font></font></font></font></h2>
+         <h3 id="comments-in-bash-scripting"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comentarios en scripts bash</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los comentarios comienzan con una </font></font></font></font><code>#</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">secuencia de comandos en bash. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esto significa que cualquier línea que comience con a </font></font></font></font><code>#</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">es un comentario y el intérprete la ignorará.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los comentarios son muy útiles para documentar el código y es una buena práctica agregarlos para ayudar a otros a comprender el código.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estos son ejemplos de comentarios:</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash"># This is an example comment
+# Both of these lines will be ignored by the interpreter</code></pre>
+         <h3 id="variables-and-data-types-in-bash"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Variables y tipos de datos en Bash</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Las variables le permiten almacenar datos. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Puede utilizar variables para leer, acceder y manipular datos en todo el script.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No hay tipos de datos en Bash. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En Bash, una variable es capaz de almacenar valores numéricos, caracteres individuales o cadenas de caracteres.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En Bash, puede usar y configurar los valores de las variables de las siguientes maneras:</font></font></font></font></p>
+         <ol>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asigna el valor directamente:</font></font></font></font></li>
+         </ol>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">country=Pakistan</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Asigne el valor según el resultado obtenido de un programa o comando, mediante sustitución de comandos. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tenga en cuenta que </font></font></font></font><code>$</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">es necesario para acceder al valor de una variable existente.</font></font></font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">same_country=$country</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Esto asigna el valor de </font></font></font></font><code>country</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">la nueva variable.</font></font></font></font><code>same_country</code>
+          </figcaption>
+         </figure>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para acceder al valor de la variable, añádalo </font></font></font></font><code>$</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">al nombre de la variable.</font></font></font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">zaira@Zaira:~$ country=Pakistan
+zaira@Zaira:~$ echo $country
+Pakistan
+zaira@Zaira:~$ new_country=$country
+zaira@Zaira:~$ echo $new_country
+Pakistan</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Asignar e imprimir valores de variables
+          </font></font></font></font></figcaption>
+         </figure>
+         <p></p>
+         <h3 id="variable-naming-conventions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Convenciones de nomenclatura de variables</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En las secuencias de comandos Bash, las siguientes son las convenciones de nomenclatura de variables:</font></font></font></font></p>
+         <ol>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los nombres de las variables deben comenzar con una letra o un guión bajo ( </font></font></font></font><code>_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">).</font></font></font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los nombres de las variables pueden contener letras, números y guiones bajos ( </font></font></font></font><code>_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">).</font></font></font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los nombres de las variables distinguen entre mayúsculas y minúsculas.</font></font></font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los nombres de las variables no deben contener espacios ni caracteres especiales.</font></font></font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Utilice nombres descriptivos que reflejen el propósito de la variable.</font></font></font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evite el uso de palabras claves reservadas, como </font></font></font></font><code>if</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></font></font><code>then</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></font></font><code>else</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></font></font><code>fi</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">etc. como nombres de variables.</font></font></font></font></li>
+         </ol>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aquí hay algunos ejemplos de nombres de variables válidos en Bash:</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">name
+count
+_var
+myVar
+MY_VAR
+</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y aquí hay algunos ejemplos de nombres de variables no válidos:</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">2ndvar (variable name starts with a number)
+my var (variable name contains a space)
+my-var (variable name contains a hyphen)
+</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seguir estas convenciones de nomenclatura ayuda a que los scripts Bash sean más legibles y fáciles de mantener.</font></font></font></font></p>
+         <h3 id="input-and-output-in-bash-scripts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Entrada y salida en scripts Bash</font></font></font></font></h3>
+         <h4 id="gathering-input"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recopilando aportes</font></font></font></font></h4>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En esta sección, analizaremos algunos métodos para proporcionar información a nuestros scripts.</font></font></font></font></p>
+         <ol>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Leer la entrada del usuario y almacenarla en una variable.</font></font></font></font></li>
+         </ol>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Podemos leer la entrada del usuario usando el </font></font></font></font><code>read</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">comando.</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+echo "Today is " `date`
+
+echo -e "\nenter the path to directory"
+read the_path
+
+echo -e "\nyour path has the following files and folders: "
+ls $the_path</code></pre>
+         <figure class="kg-card kg-image-card kg-width-wide">
+          <img src="./Laboratorio_Bash_files/name-sh.gif" class="kg-image" alt="nombre-sh" width="843" height="431" loading="lazy">
+         </figure>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Lectura de un archivo</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este código lee cada línea de un archivo llamado </font></font></font></font><code>input.txt</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">y lo imprime en la terminal. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estudiaremos los bucles mientras más adelante en este artículo.</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">while read line
+do
+  echo $line
+done &lt; input.txt
+</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. Argumentos de la línea de comando</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En un script o función bash, </font></font></font></font><code>$1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">denota el argumento inicial pasado, </font></font></font></font><code>$2</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">denota el segundo argumento pasado, y así sucesivamente.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este script toma un nombre como argumento de línea de comando e imprime un saludo personalizado.</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">echo "Hello, $1!"
+</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hemos proporcionado </font></font></font></font><code>Zaira</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">como nuestro argumento al guión.</font></font></font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+echo "Hello, $1!"</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           El código del guión:</font></font></font></font><code>greeting.sh</code>
+          </figcaption>
+         </figure>
+         <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Producción:</font></font></font></font></strong></p>
+         <figure class="kg-card kg-image-card kg-width-wide">
+          <img src="./Laboratorio_Bash_files/name-sh-1.gif" class="kg-image" alt="nombre-sh-1" width="883" height="455" loading="lazy">
+         </figure>
+         <h4 id="displaying-output"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mostrando salida</font></font></font></font></h4>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aquí discutiremos algunos métodos para recibir resultados de los scripts.</font></font></font></font></p>
+         <ol>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Impresión al terminal:</font></font></font></font></li>
+         </ol>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">echo "Hello, World!"
+</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esto imprime el texto "¡Hola, mundo!" </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a la terminal.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Escribir en un archivo:</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">echo "This is some text." &gt; output.txt
+</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esto escribe el texto "Este es un texto". </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a un archivo llamado </font></font></font></font><code>output.txt</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tenga en cuenta que el </font></font></font></font><code>&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">operador sobrescribe un archivo si ya tiene algún contenido.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. Agregar un archivo:</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">echo "More text." &gt;&gt; output.txt
+</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esto agrega el texto "Más texto". </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hasta el final del archivo </font></font></font></font><code>output.txt</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4. Redirigir la salida:</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">ls &gt; files.txt
+</code></pre>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esto enumera los archivos en el directorio actual y escribe la salida en un archivo llamado </font></font></font></font><code>files.txt</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Puede redirigir la salida de cualquier comando a un archivo de esta manera.</font></font></font></font></p>
+         <h3 id="basic-bash-commands-echo-read-etc-"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comandos básicos de Bash (eco, lectura, etc.)</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aquí hay una lista de algunos de los comandos bash más utilizados:</font></font></font></font></p>
+         <ol>
+          <li><code>cd</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: cambia el directorio a una ubicación diferente.</font></font></font></font></li>
+          <li><code>ls</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: muestra el contenido del directorio actual.</font></font></font></font></li>
+          <li><code>mkdir</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Crea un directorio nuevo.</font></font></font></font></li>
+          <li><code>touch</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Crea un nuevo archivo.</font></font></font></font></li>
+          <li><code>rm</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: eliminar un archivo o directorio.</font></font></font></font></li>
+          <li><code>cp</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Copia un archivo o directorio.</font></font></font></font></li>
+          <li><code>mv</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: mueve o cambia el nombre de un archivo o directorio.</font></font></font></font></li>
+          <li><code>echo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Imprime texto al terminal.</font></font></font></font></li>
+          <li><code>cat</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Concatenar e imprimir el contenido de un archivo.</font></font></font></font></li>
+          <li><code>grep</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: busca un patrón en un archivo.</font></font></font></font></li>
+          <li><code>chmod</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: cambia los permisos de un archivo o directorio.</font></font></font></font></li>
+          <li><code>sudo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Ejecute un comando con privilegios administrativos.</font></font></font></font></li>
+          <li><code>df</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: muestra la cantidad de espacio en disco disponible.</font></font></font></font></li>
+          <li><code>history</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: muestra una lista de comandos ejecutados anteriormente.</font></font></font></font></li>
+          <li><code>ps</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: muestra información sobre los procesos en ejecución.</font></font></font></font></li>
+         </ol>
+         <h3 id="conditional-statements-if-else-"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Declaraciones condicionales (si/si no)</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Las expresiones que producen un resultado booleano, ya sea verdadero o falso, se denominan condiciones. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hay varias formas de evaluar condiciones, incluidas </font></font></font></font><code>if</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></font></font><code>if-else</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></font></font><code>if-elif-else</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">y condiciones condicionales.</font></font></font></font></p>
+         <p><strong><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sintaxis</font></font></font></font></strong></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">if [[ condition ]];
+then
+	statement
+elif [[ condition ]]; then
+	statement 
+else
+	do this by default
+fi</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Sintaxis de declaraciones condicionales de bash
+          </font></font></font></font></figcaption>
+         </figure>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Podemos utilizar operadores lógicos como AND </font></font><code>-a</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">y OR </font></font><code>-o</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">para hacer comparaciones que tengan más significado.</font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">if [ $a -gt 60 -a $b -lt 100 ]</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Esta declaración verifica si ambas condiciones son </font></font><code>true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: a es mayor que 60 Y b es menor que 100.
+          </font></font></figcaption>
+         </figure>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Veamos un ejemplo de un script Bash que usa declaraciones </font></font><code>if</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>if-else</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">y </font></font><code>if-elif-else</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">para determinar si un número ingresado por el usuario es positivo, negativo o cero:</font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+
+echo "Please enter a number: "
+read num
+
+if [ $num -gt 0 ]; then
+  echo "$num is positive"
+elif [ $num -lt 0 ]; then
+  echo "$num is negative"
+else
+  echo "$num is zero"
+fi
+</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Script para determinar si un número es positivo, negativo o cero
+          </font></font></figcaption>
+         </figure>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El script primero solicita al usuario que ingrese un número. </font><font style="vertical-align: inherit;">Luego, utiliza una </font></font><code>if</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">declaración para verificar si el número es mayor que 0. Si es así, el script genera que el número es positivo. </font><font style="vertical-align: inherit;">Si el número no es mayor que 0, el script pasa a la siguiente declaración, que es una </font></font><code>if-elif</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">declaración. </font><font style="vertical-align: inherit;">Aquí, el script verifica si el número es menor que 0. Si es así, el script genera que el número es negativo. </font><font style="vertical-align: inherit;">Finalmente, si el número no es mayor que 0 ni menor que 0, el script usa una </font></font><code>else</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">declaración para indicar que el número es cero.</font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Verlo en acción 🚀</font></font></p>
+         <figure class="kg-card kg-image-card kg-width-wide">
+          <img src="./Laboratorio_Bash_files/test-odd.gif" class="kg-image" alt="prueba impar" width="913" height="518" loading="lazy">
+         </figure>
+         <h2 id="looping-and-branching-in-bash"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bucles y ramificaciones en Bash</font></font></h2>
+         <h3 id="while-loop"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mientras bucle</font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los bucles while comprueban una condición y realizan un bucle hasta que la condición permanece </font></font><code>true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">Necesitamos proporcionar una declaración de contador que incremente el contador para controlar la ejecución del bucle.</font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En el siguiente ejemplo, </font></font><code>(( i += 1 ))</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">se muestra la declaración de contador que incrementa el valor de </font></font><code>i</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">El bucle se ejecutará exactamente 10 veces.</font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+i=1
+while [[ $i -le 10 ]] ; do
+   echo "$i"
+  (( i += 1 ))
+done</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Bucle while que se repite 10 veces.
+          </font></font></figcaption>
+         </figure>
+         <figure class="kg-card kg-image-card kg-width-wide">
+          <img src="./Laboratorio_Bash_files/image-187.png" class="kg-image" alt="imagen-187" srcset="https://www-freecodecamp-org.translate.goog/news/content/images/size/w600/2023/03/image-187.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 600w,https://www-freecodecamp-org.translate.goog/news/content/images/2023/03/image-187.png?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp 630w" width="630" height="266" loading="lazy">
+         </figure>
+         <h3 id="for-loop"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En bucle</font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El </font></font><code>for</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bucle, al igual que el </font></font><code>while</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bucle, le permite ejecutar declaraciones un número específico de veces. </font><font style="vertical-align: inherit;">Cada bucle difiere en su sintaxis y uso.</font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En el siguiente ejemplo, el bucle se repetirá 5 veces.</font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+
+for i in {1..5}
+do
+    echo $i
+done</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Bucle For que se repite 5 veces.
+          </font></font></figcaption>
+         </figure>
+         <figure class="kg-card kg-image-card">
+          <img src="./Laboratorio_Bash_files/image-186.png" class="kg-image" alt="imagen-186" width="580" height="150" loading="lazy">
+         </figure>
+         <h3 id="case-statements"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Declaraciones de casos</font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En Bash, las declaraciones de caso se utilizan para comparar un valor determinado con una lista de patrones y ejecutar un bloque de código basado en el primer patrón que coincida. </font><font style="vertical-align: inherit;">La sintaxis de una declaración de caso en Bash es la siguiente:</font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">case expression in
+    pattern1)
+        # code to execute if expression matches pattern1
+        ;;
+    pattern2)
+        # code to execute if expression matches pattern2
+        ;;
+    pattern3)
+        # code to execute if expression matches pattern3
+        ;;
+    *)
+        # code to execute if none of the above patterns match expression
+        ;;
+esac
+</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Sintaxis de declaraciones de casos
+          </font></font></figcaption>
+         </figure>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aquí, "expresión" es el valor que queremos comparar, y "patrón1", "patrón2", "patrón3", etc., son los patrones con los que queremos compararlo.</font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El doble punto y coma ";;" </font><font style="vertical-align: inherit;">separa cada bloque de código para ejecutar para cada patrón. </font><font style="vertical-align: inherit;">El asterisco "*" representa el caso predeterminado, que se ejecuta si ninguno de los patrones especificados coincide con la expresión.</font></font></p>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Veamos un ejemplo.</font></font></p>
+         <figure class="kg-card kg-code-card">
+          <pre class="language-bash" tabindex="0"><code class="language-bash">fruit="apple"
+
+case $fruit in
+    "apple")
+        echo "This is a red fruit."
+        ;;
+    "banana")
+        echo "This is a yellow fruit."
+        ;;
+    "orange")
+        echo "This is an orange fruit."
+        ;;
+    *)
+        echo "Unknown fruit."
+        ;;
+esac
+</code></pre>
+          <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           Ejemplo de declaración de caso
+          </font></font></figcaption>
+         </figure>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En este ejemplo, dado que el valor de "fruta" es "manzana", el primer patrón coincide y el bloque de código que repite "Esta es una fruta roja". </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">es ejecutado. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Si el valor de "fruta" fuera "plátano", el segundo patrón coincidiría con el bloque de código que repite "Esta es una fruta amarilla". </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ejecutaría, y así sucesivamente. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Si el valor de "fruta" no coincide con ninguno de los patrones especificados, se ejecuta el caso predeterminado, que repite "Fruta desconocida".</font></font></font></font></p>
+         <h2 id="how-to-schedule-scripts-using-cron"><font style="vertical-align: inherit;"></font></h2>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <h2 id="how-to-debug-and-troubleshoot-bash-scripts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Opcional) Cómo depurar y solucionar problemas de scripts Bash</font></font></font></font></h2>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La depuración y la resolución de problemas son habilidades esenciales para cualquier scripter de Bash. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Si bien los scripts Bash pueden ser increíblemente poderosos, también pueden ser propensos a errores y comportamientos inesperados. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En esta sección, analizaremos algunos consejos y técnicas para depurar y solucionar problemas de scripts Bash.</font></font></font></font></p>
+         <h3 id="set-the-set-x-option"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Establecer la </font></font></font></font><code>set -x</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">opción</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Una de las técnicas más útiles para depurar scripts Bash es configurar la </font></font></font></font><code>set -x</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">opción al principio del script. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta opción habilita el modo de depuración, lo que hace que Bash imprima cada comando que ejecuta en la terminal, precedido por un </font></font></font></font><code>+</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">signo. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esto puede resultar increíblemente útil para identificar dónde se producen errores en su secuencia de comandos.</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+
+set -x
+
+# Your script goes here
+</code></pre>
+         <h3 id="check-the-exit-code"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Verifique el código de salida</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuando Bash encuentra un error, establece un código de salida que indica la naturaleza del error. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Puede verificar el código de salida del comando más reciente usando la </font></font></font></font><code>$?</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">variable. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Un valor de </font></font></font></font><code>0</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">indica éxito, mientras que cualquier otro valor indica un error.</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+
+# Your script goes here
+
+if [ $? -ne 0 ]; then
+    echo "Error occurred."
+fi
+</code></pre>
+         <h3 id="use-echo-statements"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Usar </font></font></font></font><code>echo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">declaraciones</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otra técnica útil para depurar scripts Bash es insertar </font></font></font></font><code>echo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">declaraciones en todo el código. </font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esto puede ayudarle a identificar dónde se producen errores y qué valores se pasan a las variables.</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+
+# Your script goes here
+
+echo "Value of variable x is: $x"
+
+# More code goes here
+</code></pre>
+         <h3 id="use-the-set-e-option"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Usa la </font></font></font></font><code>set -e</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">opción</font></font></font></font></h3>
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Si desea que su script salga inmediatamente cuando falla algún comando del script, puede usar la </font></font></font></font><code>set -e</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">opción. </font></font></font><font style="vertical-align: inherit;" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta opción hará que Bash salga con un error si falla algún comando del script, lo que facilitará la identificación y corrección de errores en el script.</font></font></font></font></p>
+         <pre class="language-bash" tabindex="0"><code class="language-bash">#!/bin/bash
+
+set -e
+
+# Your script goes here
+</code></pre>
+         <h3 id="troubleshooting-crons-by-verifying-logs"><font style="vertical-align: inherit;"></font></h3>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+          
+        </section> 
+         
+       </div> 
+        
+        
+        
+        
+        
+        
+      </section> 
+       
+     </article> 
+    </div> 
+   </main> 
+    
+  </div> <!-- Google Tag Manager (noscript) --> 
+  <noscript>
+   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6RKKP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript> <!-- End Google Tag Manager (noscript) --> 
+  <script defer="" src="./Laboratorio_Bash_files/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon="{&quot;rayId&quot;:&quot;8174845c8892e84b&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;b&quot;:1,&quot;token&quot;:&quot;bdb993c6dde44e178aabd9555e75e4f4&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>  
+  
+  
+ 
+</body></html>
