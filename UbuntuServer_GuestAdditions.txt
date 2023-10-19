@@ -1,0 +1,59 @@
+Opción A: Instalar Ubuntu Desktop para poder utilizar las GuestAdditions con normalidad
+
+Opción B: Ubuntu Server no tiene portapapeles, por lo que seguiremos sin poder copiar y pegar pese a instalar las GuestAdditions, para esto mejor activamos SSH en el servidor para acceder desde la consola de Windows. Es recomendable establecer la tarjeta de red de la VM en modo Puente:
+Máquina -> Configuración -> Red -> Adaptador 1
+	En el combo Conectado a: Adaptador puente (por defecto viene en NAT)
+	   En el combo Nombre: (selecciona tu interfaz de red de área local)
+
+Primero vamos a hacernos superusuarios para evitar estar usando sudo todo el rato:
+sudo su
+
+(pedirá la contraseña del usuario que se especifica durante la instalación)
+
+En caso de no tener instalado OpenSSH:
+
+apt install openssh-client
+
+apt install openssh-server
+
+Una vez instalado ejecutamos lo siguiente o bien editamos manualmente el fichero /etc/ssh/sshd_config.
+ -> Descomentamos estas dos líneas:
+sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+sed -i 's/#PermitEmptyPasswords no/PermitEmptyPasswords no/g' /etc/ssh/sshd_config
+
+ -> Edita la siguiente línea con el usuario que corresponda para añadirlo al final del archivo de configuración:
+echo "AllowUsers tu_usuario_del_servidor_de_ubuntu">>/etc/ssh/sshd_config
+	La línea quedaría así:
+		AllowUsers tu_usuario_del_servidor_de_ubuntu
+
+Una vez configurado, revisamos la IP de la máquina virtual con el comando:
+ip addr
+
+Reiniciamos el servicio para aplicar los cambios:
+systemctl restart sshd
+
+Ahora podemos conectarnos desde la consola de Windows o bien desde un gestor de conexiones SSH como Putty.
+Desde la consola de Windows sería así:
+ssh tu_usuario_del_servidor_de_ubuntu@la_ip_de_la_máquina_virtual
+
+Por pura curiosidad, en Ubuntu Server he visto que instalar las guest additions es un dolor de cabeza, pero se puede:
+
+Vamos a Dispositivos -> Unidades ópticas -> Eliminar disco de la unidad virtual
+En caso de que indique el aviso de que no puede desmontar la unidad -> Forzar desmontaje
+
+Instalamos pre-requisitos:
+apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)
+
+Volvemos a Dispositivos -> Unidades ópticas -> Seleccionar un archivo de disco
+Navegar hasta la ruta de instalación de VirtualBox:
+C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso
+
+Montar unidad:
+mkdir /media/cdrom && mount /dev/cdrom /media/cdrom
+
+Instalamos GuestAdditions:
+cd /media/cdrom
+./VBoxLinuxAdditions.run
+
+Una vez termine desmontamos la unidad:
+umount /dev/cdrom
